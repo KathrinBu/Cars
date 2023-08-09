@@ -14,10 +14,12 @@ public class Main {
         carArrayList.add(car4);
         System.out.println(carArrayList);
         carArrayList.sort((a1,a2)->Integer.compare(a1.getV(), a2.getV()));
+        carArrayList.sort((x,y)->x.v - y.v); //альтернативное решение того что выше
         System.out.println(carArrayList);
         carArrayList.sort((a1,a2)->Integer.compare(a1.getGruz(), a2.getGruz()));
         System.out.println(carArrayList);
         carArrayList.sort((b1,b2)->b1.getName().compareTo(b2.getName()));
+        carArrayList.sort((x,y)->x.name.compareTo(y.name)); //альтернативное решение того что выше
         System.out.println(carArrayList);
 
     }
